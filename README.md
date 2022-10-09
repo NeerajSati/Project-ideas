@@ -1,7 +1,11 @@
 # Project-ideas
 Upload your projects here to help beginners take on their new project.
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png)
+
+<img src="https://www.ishir.com/wp-content/uploads/2021/06/Custom-dimensions-670x450-px-Custom-dimensions.jpeg" width="90%"></img>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png)
 
 # Contribution guidelines
  - Must have atleast 1 screen shot of the project
