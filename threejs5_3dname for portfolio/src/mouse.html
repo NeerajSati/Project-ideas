@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let mouseCoordinates =
+            { x: 0, y: 0 }
+        let mousePreviousCoordinates = { a: mouseCoordinates.x, b: mouseCoordinates.y }
+        let value = null
+      
+        let c = mousePreviousCoordinates.a
+        let d = mousePreviousCoordinates.b
+        let e = mouseCoordinates.x
+        let f = mouseCoordinates.y
+        setInterval(() => {
+            if (e != c || f != d) {
+                console.log('mouse Moved')
+            }
+            // else {
+            //     console.log('mouse stable')
+            // }
+
+        }, 100);
+        window.addEventListener('mousemove',
+            (e) => {
+                mousePreviousCoordinates.a = mouseCoordinates.x
+                mousePreviousCoordinates.b = mouseCoordinates.y
+                mouseCoordinates.x = e.pageX,
+                mouseCoordinates.y = e.pageY
+            })
+        window.addEventListener('click', () => {
+            console.log(mousePreviousCoordinates.a, mouseCoordinates.x)
+            console.log(mousePreviousCoordinates.b, mouseCoordinates.y)
+        })
+// if(mouseMove.length)
+//     {
+//         if(value===null)
+//         {
+//             console.log('mouse Moved')
+//         }
+//         value=mouseMove[0]
+//         mouseMove=[]
+
+//     }
+//     else
+//     {
+//         if(value)
+//         {
+//             console.log('mouse stopped')
+//         }
+//         value=null
+//         mouseMove=[]
+//     }
+//     if(!mouseMove.includes(true))
+//     {
+//         mouseMove.push(true)
+//     }
+    </script>
+</body>
+
+</html>
